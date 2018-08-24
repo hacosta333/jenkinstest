@@ -11,5 +11,6 @@ COPY requirements.txt /opt/apps/
 RUN pip install -r /opt/apps/requirements.txt
 
 COPY docker-entrypoint.sh /
+#Exponiendo el puerto
 EXPOSE 5000
 ENTRYPOINT "/docker-entrypoint.sh"
