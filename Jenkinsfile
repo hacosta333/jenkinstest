@@ -23,7 +23,7 @@ pipeline {
         stage('TestApp'){
             steps {
 		sh '''
-                        bash -c "source ${WORKSPACE}/entorno_virtual/bin/activate && bash -c "source ${WORKSPACE}/entorno_virtual/bin/activate &&  cd src && ${WORKSPACE}/entorno_virtual/bin/python ${WORKSPACE}/entorno_virtual/bin/pytest && cd .."
+                        bash -c "source ${WORKSPACE}/entorno_virtual/bin/activate &&  cd src && ${WORKSPACE}/entorno_virtual/bin/python ${WORKSPACE}/entorno_virtual/bin/pytest && cd .."
                 '''
             }
         }
